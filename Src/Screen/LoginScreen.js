@@ -40,7 +40,7 @@ const LoginScreen = ({navigation}) => {
     setLoading(true);
     //    let dataToSend = {user_email: userEmail, user_password: userPassword};
 
-    let dataToSend = JSON.stringify({email:"mohammad.chashmi@gmail.com", password:"1qazzxsw23edc",typeDiv:"mobile"});
+    let dataToSend = JSON.stringify({email:"solomon@yahoo.com", password:"qwertyuio",typeDiv:"dd2"});
     
     
     console.log(dataToSend);
@@ -53,7 +53,7 @@ const LoginScreen = ({navigation}) => {
     // }
     //formBody = formBody.join('&');
 //https://aboutreact.herokuapp.com/login.php
-    fetch('http://vellik.ir/api/v1/login', {
+    fetch('#/api/v1/login', {
       method: 'POST',
       body: dataToSend,
       headers: {
